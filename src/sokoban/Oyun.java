@@ -1,4 +1,5 @@
 package sokoban;
+
 import java.util.Scanner;
 
 public class Oyun {
@@ -10,16 +11,11 @@ public class Oyun {
     public static final int SOLA = 4;
     public static final int HATALI = 0;
 
-    private int adım;
+    public static int adım;
 
     public Oyun(){
         harita = null;
         adım = 0;
-    }
-
-    public Oyun(int[][] matris){
-        adım = 0;
-        yukle(matris);
     }
 
     public void yukle(int[][] matris){
@@ -113,4 +109,10 @@ public class Oyun {
         System.out.println("\n Toplam Adım: "+ adım);
         System.out.println("\n-------------------------\n");
     }
-}
+
+    }
+
+
+
+
+
